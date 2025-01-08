@@ -1,6 +1,7 @@
 from urllib.parse import urlparse
 from environs import Env
 import requests
+import argparse
 
 
 
@@ -51,7 +52,12 @@ def main():
     access_token = env.str('ACCESS_TOKEN')
     version = env.float('VERSION')
 
-    original_link = input("Введите ссылку")
+    parser = argparse.ArgumentParser(
+        description='Введите полную или сокращенную ссылку, для сокращения ссылки или подсчета кликов соответственно'
+    )
+    parser.add_argument('link')
+    original_link = parser.parse_args()
+
 
     try:
         if is_shorten_link(original_link, access_token, version):
