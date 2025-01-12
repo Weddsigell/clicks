@@ -4,7 +4,6 @@ import requests
 import argparse
 
 
-
 def shorten_link(original_link, token, version):
     url = 'https://api.vk.ru/method/utils.getShortLink'
     params = {
