@@ -10,8 +10,8 @@
 ## Переменные окружения
 * Создайте `.env` файл в корне проекта и поместите туда переменные окружения
   ```
-    export ACCESS_TOKEN = ***
-    export VERSION = ***
+    ACCESS_TOKEN=***
+    VERSION=***
 * **ACCESS_TOKEN** - токен подключения к api vk
   * Получить сервисный токен https://id.vk.com/about/business/go/docs/ru/vkid/latest/vk-id/connection/tokens/service-token
 * **VERSION** - версия api vk (5.199)
